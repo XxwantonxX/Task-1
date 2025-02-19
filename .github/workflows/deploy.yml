@@ -28,6 +28,6 @@ jobs:
 
       - name: Deploy to Vercel
         env:
-          VERCEL_TOKEN: ${{ secrets.MLOPS_SECRET }}
+          VERCEL_TOKEN: ${{ secrets.MLOPS_SECRET_1 }}
         run: |
           vercel --token $VERCEL_TOKEN --yes --prod
